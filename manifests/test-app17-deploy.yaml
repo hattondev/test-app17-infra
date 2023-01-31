@@ -44,10 +44,10 @@ spec:
         readinessProbe:
           httpGet:
             port: 80
-            path: /health-check/readiness
+            path: /
         livenessProbe:
           httpGet:
             port: 80
-            path: /health-check/liveness
+            path: /
           initialDelaySeconds: 3
           periodSeconds: 15
